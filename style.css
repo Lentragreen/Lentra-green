@@ -37,7 +37,7 @@ ul{
     min-height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url("images/rice.jpg") center/cover no-repeat;
+    url("rice.jpg") center/cover no-repeat;
 
     display:flex;
     flex-direction:column;
