@@ -1,0 +1,164 @@
+/* ==========================
+   إعدادات عامة
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.8;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ==========================
+   الهيدر
+========================== */
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("images/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================
+   الناف بار
+========================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    color:white;
+    font-size:28px;
+    font-weight:800;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    gap:25px;
+
+}
+
+.navbar a{
+
+    color:white;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#f4c542;
+
+}
+
+/* ==========================
+   محتوى البداية
+========================== */
+
+.hero-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    max-width:800px;
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+.btn{
+
+    background:#d4af37;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#b08d1e;
+
+    transform:translateY(-3px);
+
+}
