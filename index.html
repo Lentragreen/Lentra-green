@@ -1,83 +1,330 @@
-// =========================
-// Mobile Menu
-// =========================
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-if (menuBtn) {
-    menuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الأرز المصرية</title>
 
-// =========================
-// Header Scroll Effect
-// =========================
-const header = document.querySelector("header");
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-// =========================
-// Reveal Animation
-// =========================
-const reveals = document.querySelectorAll(".reveal");
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-function revealElements() {
-    reveals.forEach((element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
+<body>
 
-        if (elementTop < windowHeight - 100) {
-            element.classList.add("active");
-        }
-    });
-}
+    <!-- بداية الهيدر -->
+    <header class="hero">
 
-window.addEventListener("scroll", revealElements);
-window.addEventListener("load", revealElements);
+        <nav class="navbar">
 
-// =========================
-// Scroll To Top Button
-// =========================
-const topBtn = document.createElement("button");
-topBtn.innerHTML = "↑";
-topBtn.id = "topBtn";
-document.body.appendChild(topBtn);
+            <div class="logo">
+                🌾 شركة الأرز المصرية
+            </div>
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        topBtn.style.display = "block";
-    } else {
-        topBtn.style.display = "none";
-    }
-});
+            <ul>
 
-topBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#gallery">المعرض</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
 
-// =========================
-// Smooth Scroll
-// =========================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
+            </ul>
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+        </nav>
 
-        if (navLinks) {
-            navLinks.classList.remove("active");
-        }
-    });
-});
+        <div class="hero-content">
+
+            <h1>جودة تبدأ من الحقل وتنتهي على مائدتك</h1>
+
+            <p>
+
+                متخصصون في ضرب وتبييض الأرز الشعير
+                وتصنيع وتعبئة وتغليف الأرز
+                وتوريد الحبوب داخل وخارج مصر
+                بأعلى معايير الجودة.
+
+            </p>
+
+            <a href="#products" class="btn">
+                منتجاتنا
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- من نحن -->
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="about-text">
+
+                <h2>من نحن</h2>
+
+                <p>
+
+                    شركة الأرز المصرية من الشركات الرائدة في مجال
+                    تصنيع وتعبئة وتغليف الأرز والحبوب الغذائية،
+                    ونمتلك خبرة كبيرة في توفير أجود المنتجات
+                    للأسواق المحلية والعالمية.
+
+                </p>
+
+                <p>
+
+                    نلتزم بأعلى معايير الجودة
+                    ونستخدم أحدث خطوط الإنتاج
+                    لضمان أفضل منتج لعملائنا.
+
+                </p>
+
+            </div>
+
+            <div class="about-image">
+
+                <img src="images/factory.jpg" alt="مصنع الأرز">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- الخدمات -->
+
+    <section id="services" class="services">
+
+        <h2>خدماتنا</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-wheat-awn"></i>
+
+                <h3>ضرب وتبييض الأرز</h3>
+
+                <p>
+                    باستخدام أحدث خطوط الإنتاج.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-box"></i>
+
+                <h3>التعبئة والتغليف</h3>
+
+                <p>
+
+                    بأحجام مختلفة تناسب جميع الأسواق.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>التوريد والتوزيع</h3>
+
+                <p>
+
+                    لجميع المحافظات والتصدير للخارج.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- المنتجات -->
+    <section id="products" class="products">
+
+        <h2>منتجاتنا</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="images/rice1.jpg" alt="أرز أبيض">
+                <h3>أرز أبيض فاخر</h3>
+                <p>جودة عالية مناسبة لجميع الاستخدامات.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/rice2.jpg" alt="أرز مصري">
+                <h3>أرز مصري ممتاز</h3>
+                <p>منتقى بعناية لضمان أعلى جودة.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/rice3.jpg" alt="تعبئة">
+                <h3>تعبئة مخصصة</h3>
+                <p>أحجام تبدأ من 1 كجم وحتى 50 كجم.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- الإحصائيات -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+            <h2>20+</h2>
+            <p>سنة خبرة</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>5000+</h2>
+            <p>عميل</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>50+</h2>
+            <p>شريك تجاري</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>جودة مضمونة</p>
+        </div>
+
+    </section>
+
+    <!-- معرض الصور -->
+
+    <section id="gallery" class="gallery">
+
+        <h2>معرض الصور</h2>
+
+        <div class="gallery-container">
+
+            <img src="images/gallery1.jpg" alt="">
+            <img src="images/gallery2.jpg" alt="">
+            <img src="images/gallery3.jpg" alt="">
+            <img src="images/gallery4.jpg" alt="">
+            <img src="images/gallery5.jpg" alt="">
+            <img src="images/gallery6.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- لماذا نحن -->
+
+    <section class="why-us">
+
+        <h2>لماذا نحن؟</h2>
+
+        <div class="why-container">
+
+            <div>
+                <i class="fa-solid fa-award"></i>
+                <h3>جودة عالمية</h3>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-industry"></i>
+                <h3>أحدث المعدات</h3>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-handshake"></i>
+                <h3>ثقة العملاء</h3>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h3>تصدير للخارج</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- تواصل معنا -->
+
+    <section id="contact" class="contact">
+
+        <h2>تواصل معنا</h2>
+
+        <form>
+
+            <input type="text" placeholder="الاسم">
+
+            <input type="email" placeholder="البريد الإلكتروني">
+
+            <input type="text" placeholder="رقم الهاتف">
+
+            <textarea placeholder="اكتب رسالتك"></textarea>
+
+            <button type="submit">
+                إرسال
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- زر واتساب -->
+
+    <a href="https://wa.me/201000000000"
+       class="whatsapp"
+       target="_blank">
+
+       <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- الفوتر -->
+
+    <footer>
+
+        <h3>شركة الأرز المصرية</h3>
+
+        <p>
+            متخصصون في تصنيع وتعبئة وتغليف الأرز والحبوب الغذائية.
+        </p>
+
+        <div class="social">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+
+        <p class="copy">
+
+            © 2026 جميع الحقوق محفوظة | شركة الأرز المصرية
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
