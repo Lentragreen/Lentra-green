@@ -104,7 +104,7 @@ header.scrolled .nav-links a{
 
 .hero{
     height:100vh;
-    background:url("images/rice-bg.jpg") center center/cover no-repeat;
+    background:url("rice.jpg") center center/cover no-repeat;
     position:relative;
     display:flex;
     justify-content:center;
