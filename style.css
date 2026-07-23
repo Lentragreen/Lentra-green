@@ -142,12 +142,10 @@ section{
 }
 
 .logo span{
-
+    color:white;
     font-size:25px;
     font-weight:700;
-
 }
-
 .nav-links{
 
     display:flex;
