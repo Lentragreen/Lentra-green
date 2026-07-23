@@ -625,25 +625,12 @@ footer{
     .btn-outline{
         width:100%;
     }
-
-}
-.contact-info{
-    max-width:600px;
-    margin:auto;
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
-
-.contact-info p{
-    font-size:20px;
-    margin:20px 0;
+.contact-info a{
     color:#333;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.contact-info i{
+.contact-info a:hover{
     color:#2E8B57;
-    width:35px;
-    font-size:22px;
 }
