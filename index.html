@@ -6,324 +6,446 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lentra Green</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- بداية الهيدر -->
-    <header class="hero">
+<header class="hero" id="home">
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <div class="logo">
-                🌾 lentra green
-            </div>
+        <a href="#" class="logo">
 
-            <ul>
+            <img src="images/logo.png" alt="Lentra Green">
 
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#products">المنتجات</a></li>
-                <li><a href="#gallery">المعرض</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
+            <span>Lentra Green</span>
 
-            </ul>
+        </a>
 
-        </nav>
+        <ul class="nav-links">
 
-        <div class="hero-content">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#products">المنتجات</a></li>
+            <li><a href="#gallery">المعرض</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
 
-            <h1>جودة تبدأ من الحقل وتنتهي على مائدتك</h1>
+        </ul>
 
-            <p>
+        <a href="#contact" class="quote-btn">
+            اطلب عرض سعر
+        </a>
 
-                متخصصون في ضرب وتبييض الأرز الشعير
-                وتصنيع وتعبئة وتغليف الأرز
-                وتوريد الحبوب داخل وخارج مصر
-                بأعلى معايير الجودة.
+    </nav>
 
-            </p>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>
+            جودة تبدأ من الحقل وتنتهي على مائدتك
+        </h1>
+
+        <p>
+            متخصصون في ضرب وتبييض الأرز الشعير،
+            وتصنيع وتعبئة وتغليف الأرز،
+            وتوريد الحبوب والمنتجات الغذائية
+            داخل وخارج جمهورية مصر العربية
+            بأعلى معايير الجودة.
+        </p>
+
+        <div class="hero-buttons">
 
             <a href="#products" class="btn">
                 منتجاتنا
             </a>
 
-        </div>
-
-    </header>
-
-    <!-- من نحن -->
-
-    <section id="about" class="about">
-
-        <div class="container">
-
-            <div class="about-text">
-
-                <h2>من نحن</h2>
-
-                <p>
-
-                    شركة الأرز المصرية من الشركات الرائدة في مجال
-                    تصنيع وتعبئة وتغليف الأرز والحبوب الغذائية،
-                    ونمتلك خبرة كبيرة في توفير أجود المنتجات
-                    للأسواق المحلية والعالمية.
-
-                </p>
-
-                <p>
-
-                    نلتزم بأعلى معايير الجودة
-                    ونستخدم أحدث خطوط الإنتاج
-                    لضمان أفضل منتج لعملائنا.
-
-                </p>
-
-            </div>
-
-            <div class="about-image">
-
-                <img src="images/factory.jpg" alt="مصنع الأرز">
-
-            </div>
+            <a href="#contact" class="btn-outline">
+                تواصل معنا
+            </a>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- الخدمات -->
+</header>
+<!-- من نحن -->
 
-    <section id="services" class="services">
+<section id="about" class="about">
 
-        <h2>خدماتنا</h2>
+    <div class="container">
 
-        <div class="cards">
+        <div class="about-image">
+            <img src="images/factory.jpg" alt="مصنع Lentra Green">
+        </div>
 
-            <div class="card">
+        <div class="about-text">
 
-                <i class="fa-solid fa-wheat-awn"></i>
+            <span class="section-title">من نحن</span>
 
-                <h3>ضرب وتبييض الأرز</h3>
+            <h2>خبرة وجودة في صناعة وتعبئة الأرز</h2>
 
-                <p>
-                    باستخدام أحدث خطوط الإنتاج.
-                </p>
+            <p>
+                تعد شركة <strong>Lentra Green</strong> من الشركات المتخصصة
+                في ضرب وتبييض الأرز الشعير وتصنيع وتعبئة وتغليف الأرز
+                والحبوب الغذائية وفق أعلى معايير الجودة.
+            </p>
 
-            </div>
+            <p>
+                نهدف إلى توفير منتجات عالية الجودة تلبي احتياجات السوق
+                المحلي وأسواق التصدير من خلال أحدث خطوط الإنتاج وفريق
+                عمل يتمتع بخبرة كبيرة.
+            </p>
 
-            <div class="card">
+            <div class="about-features">
 
-                <i class="fa-solid fa-box"></i>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    جودة عالمية
+                </div>
 
-                <h3>التعبئة والتغليف</h3>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    أحدث خطوط الإنتاج
+                </div>
 
-                <p>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    تصدير للأسواق العالمية
+                </div>
 
-                    بأحجام مختلفة تناسب جميع الأسواق.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-truck-fast"></i>
-
-                <h3>التوريد والتوزيع</h3>
-
-                <p>
-
-                    لجميع المحافظات والتصدير للخارج.
-
-                </p>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    أسعار تنافسية
+                </div>
 
             </div>
 
         </div>
 
-    </section>
-    <!-- المنتجات -->
-    <section id="products" class="products">
+    </div>
 
-        <h2>منتجاتنا</h2>
+</section>
 
-        <div class="product-container">
 
-            <div class="product-card">
-                <img src="images/rice1.jpg" alt="أرز أبيض">
+<!-- الخدمات -->
+
+<section id="services" class="services">
+
+    <div class="section-header">
+
+        <span>خدماتنا</span>
+
+        <h2>ما الذي نقدمه؟</h2>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-wheat-awn"></i>
+
+            <h3>ضرب وتبييض الأرز</h3>
+
+            <p>
+                باستخدام أحدث المعدات للحصول على أعلى جودة.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-box-open"></i>
+
+            <h3>التعبئة والتغليف</h3>
+
+            <p>
+                تعبئة بأوزان مختلفة تناسب السوق المحلي والتصدير.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <h3>التوريد والتوزيع</h3>
+
+            <p>
+                توريد داخل مصر وخارجها بسرعة وكفاءة.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <h3>التصدير</h3>
+
+            <p>
+                تصدير المنتجات وفق المواصفات العالمية.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- المنتجات -->
+
+<section id="products" class="products">
+
+    <div class="section-header">
+
+        <span>منتجاتنا</span>
+
+        <h2>أفضل أنواع الأرز المصري</h2>
+
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+
+            <img src="images/rice1.jpg" alt="أرز أبيض">
+
+            <div class="product-info">
+
                 <h3>أرز أبيض فاخر</h3>
-                <p>جودة عالية مناسبة لجميع الاستخدامات.</p>
+
+                <p>
+                    جودة عالية ونقاء يضمن أفضل تجربة للمستهلك.
+                </p>
+
             </div>
 
-            <div class="product-card">
-                <img src="images/rice2.jpg" alt="أرز مصري">
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/rice2.jpg" alt="أرز مصري">
+
+            <div class="product-info">
+
                 <h3>أرز مصري ممتاز</h3>
-                <p>منتقى بعناية لضمان أعلى جودة.</p>
+
+                <p>
+                    يتم اختياره بعناية ليلبي أعلى معايير الجودة.
+                </p>
+
             </div>
 
-            <div class="product-card">
-                <img src="images/rice3.jpg" alt="تعبئة">
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/rice3.jpg" alt="تعبئة">
+
+            <div class="product-info">
+
                 <h3>تعبئة مخصصة</h3>
-                <p>أحجام تبدأ من 1 كجم وحتى 50 كجم.</p>
+
+                <p>
+                    أحجام تبدأ من 1 كجم حتى 50 كجم حسب الطلب.
+                </p>
+
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- الإحصائيات -->
+</section>
+<!-- الإحصائيات -->
 
-    <section class="stats">
+<section class="stats">
 
-        <div class="stat-box">
-            <h2>20+</h2>
-            <p>سنة خبرة</p>
+    <div class="stat-box">
+        <h2>20+</h2>
+        <p>سنة خبرة</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>5000+</h2>
+        <p>عميل</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>50+</h2>
+        <p>شريك تجاري</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>جودة مضمونة</p>
+    </div>
+
+</section>
+
+<!-- معرض الصور -->
+
+<section id="gallery" class="gallery">
+
+    <div class="section-header">
+        <span>معرض الصور</span>
+        <h2>بعض أعمالنا</h2>
+    </div>
+
+    <div class="gallery-container">
+
+        <img src="images/gallery1.jpg" alt="">
+        <img src="images/gallery2.jpg" alt="">
+        <img src="images/gallery3.jpg" alt="">
+        <img src="images/gallery4.jpg" alt="">
+        <img src="images/gallery5.jpg" alt="">
+        <img src="images/gallery6.jpg" alt="">
+
+    </div>
+
+</section>
+
+<!-- لماذا نحن -->
+
+<section class="why-us">
+
+    <div class="section-header">
+        <span>لماذا نحن</span>
+        <h2>لماذا يختارنا عملاؤنا؟</h2>
+    </div>
+
+    <div class="why-container">
+
+        <div>
+            <i class="fa-solid fa-award"></i>
+            <h3>جودة عالمية</h3>
         </div>
 
-        <div class="stat-box">
-            <h2>5000+</h2>
-            <p>عميل</p>
+        <div>
+            <i class="fa-solid fa-industry"></i>
+            <h3>أحدث خطوط الإنتاج</h3>
         </div>
 
-        <div class="stat-box">
-            <h2>50+</h2>
-            <p>شريك تجاري</p>
+        <div>
+            <i class="fa-solid fa-handshake"></i>
+            <h3>ثقة العملاء</h3>
         </div>
 
-        <div class="stat-box">
-            <h2>100%</h2>
-            <p>جودة مضمونة</p>
+        <div>
+            <i class="fa-solid fa-globe"></i>
+            <h3>التصدير للخارج</h3>
         </div>
 
-    </section>
+    </div>
 
-    <!-- معرض الصور -->
+</section>
 
-    <section id="gallery" class="gallery">
+<!-- تواصل معنا -->
 
-        <h2>معرض الصور</h2>
+<section id="contact" class="contact">
 
-        <div class="gallery-container">
+    <div class="section-header">
+        <span>تواصل معنا</span>
+        <h2>يسعدنا التواصل معكم</h2>
+    </div>
 
-            <img src="images/gallery1.jpg" alt="">
-            <img src="images/gallery2.jpg" alt="">
-            <img src="images/gallery3.jpg" alt="">
-            <img src="images/gallery4.jpg" alt="">
-            <img src="images/gallery5.jpg" alt="">
-            <img src="images/gallery6.jpg" alt="">
+    <form>
+
+        <input type="text" placeholder="الاسم">
+
+        <input type="email" placeholder="البريد الإلكتروني">
+
+        <input type="text" placeholder="رقم الهاتف">
+
+        <textarea placeholder="اكتب رسالتك"></textarea>
+
+        <button type="submit">
+            إرسال الرسالة
+        </button>
+
+    </form>
+
+</section>
+
+<!-- زر واتساب -->
+
+<a href="https://wa.me/201000000000"
+   class="whatsapp"
+   target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- الفوتر -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Lentra Green</h3>
+
+            <p>
+                متخصصون في تصنيع وتعبئة وتغليف الأرز والحبوب الغذائية
+                وتوريدها داخل وخارج جمهورية مصر العربية.
+            </p>
 
         </div>
 
-    </section>
+        <div>
 
-    <!-- لماذا نحن -->
+            <h4>روابط سريعة</h4>
 
-    <section class="why-us">
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#products">المنتجات</a>
+            <a href="#services">الخدمات</a>
+            <a href="#contact">تواصل معنا</a>
 
-        <h2>لماذا نحن؟</h2>
+        </div>
 
-        <div class="why-container">
+        <div>
 
-            <div>
-                <i class="fa-solid fa-award"></i>
-                <h3>جودة عالمية</h3>
+            <h4>تابعنا</h4>
+
+            <div class="social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
             </div>
 
-            <div>
-                <i class="fa-solid fa-industry"></i>
-                <h3>أحدث المعدات</h3>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-handshake"></i>
-                <h3>ثقة العملاء</h3>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h3>تصدير للخارج</h3>
-            </div>
-
         </div>
 
-    </section>
+    </div>
 
-    <!-- تواصل معنا -->
+    <hr>
 
-    <section id="contact" class="contact">
+    <p class="copy">
+        © 2026 Lentra Green. جميع الحقوق محفوظة.
+    </p>
 
-        <h2>تواصل معنا</h2>
-
-        <form>
-
-            <input type="text" placeholder="الاسم">
-
-            <input type="email" placeholder="البريد الإلكتروني">
-
-            <input type="text" placeholder="رقم الهاتف">
-
-            <textarea placeholder="اكتب رسالتك"></textarea>
-
-            <button type="submit">
-                إرسال
-            </button>
-
-        </form>
-
-    </section>
-
-    <!-- زر واتساب -->
-
-    <a href="https://wa.me/201000000000"
-       class="whatsapp"
-       target="_blank">
-
-       <i class="fa-brands fa-whatsapp"></i>
-
-    </a>
-
-    <!-- الفوتر -->
-
-    <footer>
-
-        <h3>شركة الأرز المصرية</h3>
-
-        <p>
-            متخصصون في تصنيع وتعبئة وتغليف الأرز والحبوب الغذائية.
-        </p>
-
-        <div class="social">
-
-            <a href="#"><i class="fab fa-facebook"></i></a>
-
-            <a href="#"><i class="fab fa-instagram"></i></a>
-
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-
-        </div>
-
-        <p class="copy">
-
-            © 2026 جميع الحقوق محفوظة | شركة الأرز المصرية
-
-        </p>
-
-    </footer>
+</footer>
 
 </body>
 
