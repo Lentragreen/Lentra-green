@@ -469,3 +469,36 @@ footer p{
 
 /*==========================
     Scroll
+let currentIndex = 0;
+
+function getVisibleCount() {
+  if (window.innerWidth <= 560) return 1;
+  if (window.innerWidth <= 900) return 2;
+  return 4;
+}
+
+function moveSlide(direction) {
+  const track = document.getElementById("sliderTrack");
+  if (!track) return;
+
+  const slides = track.querySelectorAll(".slide-item");
+  const visible = getVisibleCount();
+  const maxIndex = Math.max(0, slides.length - visible);
+
+  currentIndex += direction;
+
+  if (currentIndex > maxIndex) {
+    currentIndex = 0;
+  } else if (currentIndex < 0) {
+    currentIndex = maxIndex;
+  }
+
+  const slideWidth = slides[0].getBoundingClientRect().width + 16;
+  track.style.transform = `translateX(${currentIndex * slideWidth}px)`;
+}
+
+window.addEventListener("resize", () => {
+  currentIndex = 0;
+  const track = document.getElementById("sliderTrack");
+  if (track) track.style.transform = "translateX(0px)";
+});
