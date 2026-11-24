@@ -469,9 +469,10 @@ footer p{
 
 /*==========================
     Scroll
-let currentIndex = 0;
 
-function getVisibleCount() {
+let galleryCurrentIndex = 0;
+
+function getGalleryVisibleCount() {
   if (window.innerWidth <= 560) return 1;
   if (window.innerWidth <= 900) return 2;
   return 4;
@@ -482,23 +483,30 @@ function moveSlide(direction) {
   if (!track) return;
 
   const slides = track.querySelectorAll(".slide-item");
-  const visible = getVisibleCount();
+  if (!slides.length) return;
+
+  const visible = getGalleryVisibleCount();
   const maxIndex = Math.max(0, slides.length - visible);
 
-  currentIndex += direction;
+  galleryCurrentIndex += direction;
 
-  if (currentIndex > maxIndex) {
-    currentIndex = 0;
-  } else if (currentIndex < 0) {
-    currentIndex = maxIndex;
+  if (galleryCurrentIndex > maxIndex) {
+    galleryCurrentIndex = 0;
+  } else if (galleryCurrentIndex < 0) {
+    galleryCurrentIndex = maxIndex;
   }
 
-  const slideWidth = slides[0].getBoundingClientRect().width + 16;
-  track.style.transform = `translateX(${currentIndex * slideWidth}px)`;
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  const gap = visible === 1 ? 0 : 16;
+  const moveDistance = galleryCurrentIndex * (slideWidth + gap);
+
+  track.style.transform = `translateX(${moveDistance}px)`;
 }
 
 window.addEventListener("resize", () => {
-  currentIndex = 0;
+  galleryCurrentIndex = 0;
   const track = document.getElementById("sliderTrack");
-  if (track) track.style.transform = "translateX(0px)";
+  if (track) {
+    track.style.transform = "translateX(0px)";
+  }
 });
