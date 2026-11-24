@@ -286,51 +286,46 @@
 
 <!-- معرض الصور -->
 
-<section id="gallery" class="gallery">
+<section id="gallery" class="gallery" dir="rtl">
   <div class="section-header">
     <span>معرض الصور</span>
     <h2>بعض أعمالنا</h2>
   </div>
 
-  <div class="swiper myGallerySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="land.jbg.jpeg" alt="أرض زراعية">
+  <div class="custom-slider">
+    <button type="button" class="slider-btn prev-btn" onclick="moveSlide(-1)" aria-label="السابق">&#10094;</button>
+
+    <div class="slider-viewport">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide-item">
+          <img src="land.jbg.jpeg" alt="أرض زراعية">
+        </div>
+        <div class="slide-item">
+          <img src="papper.jbg.jpeg" alt="فلفل">
+        </div>
+        <div class="slide-item">
+          <img src="papper2.jbg.jpeg" alt="فلفل 2">
+        </div>
+        <div class="slide-item">
+          <img src="soba.jbg.jpeg" alt="صوبة زراعية">
+        </div>
+        <div class="slide-item">
+          <img src="riceland.jbg.jpeg" alt="أرض أرز">
+        </div>
+        <div class="slide-item">
+          <video controls muted playsinline preload="metadata">
+            <source src="video.vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="slide-item">
+          <video controls muted playsinline preload="metadata">
+            <source src="plant.vid.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      <div class="swiper-slide">
-        <img src="papper.jbg.jpeg" alt="فلفل">
-      </div>
-      <div class="swiper-slide">
-        <img src="papper2.jbg.jpeg" alt="فلفل 2">
-      </div>
-      <div class="swiper-slide">
-        <img src="soba.jbg.jpeg" alt="صوبة زراعية">
-      </div>
-      <div class="swiper-slide">
-        <img src="riceland.jbg.jpeg" alt="أرض أرز">
-      </div>
-      <div class="swiper-slide">
-        <img src="sun.jbg" alt="عمل جديد 1">
-      </div>
-      <div class="swiper-slide">
-        <img src="new-photo-2.jpg" alt="عمل جديد 2">
-      </div>
-        <div class="swiper-slide">
-  <video controls muted playsinline preload="metadata" poster="video.vid.mp4">
-    <source src="short-video.mp4" type="video/mp4">
-  </video>
-</div>
-       <div class="swiper-slide">
-  <video controls muted playsinline preload="metadata" poster="plant.vid.mp4">
-    <source src="short-video.mp4" type="video/mp4">
-  </video>
-</div> 
     </div>
 
-    <!-- أزرار يمين وشمال -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <button type="button" class="slider-btn next-btn" onclick="moveSlide(1)" aria-label="التالي">&#10095;</button>
   </div>
 </section>
 <!-- لماذا نحن -->
